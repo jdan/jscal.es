@@ -1,5 +1,4 @@
-
-require 'toto'
+require 'prezjordan-toto'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
@@ -31,5 +30,3 @@ toto = Toto::Server.new do
 end
 
 run toto
-
-

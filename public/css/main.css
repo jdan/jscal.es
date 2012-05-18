@@ -3,10 +3,10 @@ html { margin: 20px }
 body {
     margin: 0 auto;
     font-family: 'Baskerville', Georgia, Times, serif;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
     padding: 15px;
-    width: 720px;
+    width: 800px;
 }
 
 header, footer, section, article {
@@ -14,6 +14,11 @@ header, footer, section, article {
 }
 
 #content {
+    
+}
+
+p {
+
 }
 
 #by {
@@ -33,19 +38,22 @@ header, footer, section, article {
 }
 
 .date {
-    font-style: italic;
+    font-size: 80%;
     float: right;
     line-height: 43px;
-    margin-right: 30px;
 }
 
 a {
-  color: #b83000;
+    color: #b83000;
 }
 
 h1 a {
-    color: black;
+    font-size: 120%;
     text-decoration: none;
+}
+
+strong {
+    font-weight: 400;
 }
 
 a:hover {
@@ -65,28 +73,28 @@ body > header > h1 {
 }
 
 .post.blue { border-left: 4px solid #049cdb }
-.post.blue a, #articles .post.blue b, .post.blue h1 { color: #049cdb }
+.post.blue a, .post.blue strong, .post.blue h1 { color: #049cdb }
 
 .post.green { border-left: 4px solid #46a546 }
-.post.green a, #articles .post.green b, .post.green h1 { color: #46a546 }
+.post.green a, .post.green strong, .post.green h1 { color: #46a546 }
 
 .post.red { border-left: 4px solid #9d261d }
-.post.red a, #articles .post.red b, .post.red h1 { color: #9d261d }
+.post.red a, .post.red strong, .post.red h1 { color: #9d261d }
 
 .post.yellow { border-left: 4px solid #ffc40d }
-.post.yellow a, #articles .post.yellow b, .post.yellow h1 { color: #ffc40d }
+.post.yellow a, .post.yellow strong, .post.yellow h1 { color: #ffc40d }
 
 .post.orange { border-left: 4px solid #f89406 }
-.post.orange a, #articles .post.orange b, .post.orange h1 { color: #f89406 }
+.post.orange a, .post.orange strong, .post.orange h1 { color: #f89406 }
 
 .post.pink { border-left: 4px solid #de6fa1 }
-.post.pink a, #articles .post.pink b, .post.pink h1 { color: #de6fa1 }
+.post.pink a, .post.pink strong, .post.pink h1 { color: #de6fa1 }
 
 .post.purple { border-left: 4px solid #7a43b6 }
-.post.purple a, #articles .post.purple b, .post.purple h1 { color: #7a43b6 }
+.post.purple a, .post.purple strong, .post.purple h1 { color: #7a43b6 }
 
 .post.gray { border-left: 4px solid #999 }
-.post.gray a, #articles .post.gray b, .post.gray h1 { color: #999 }
+.post.gray a, .post.gray strong, .post.gray h1 { color: #999 }
 
 .post header {
 	margin-bottom: 10px;
@@ -109,14 +117,11 @@ body > header > h1 {
 }
 
 .post p {
-    margin: 10px 0;
+    margin: 24px 0;
 }
 
-.post .more {
-    margin-top: -10px;
-    margin-right: 30px;
-    font-style: italic;
-    text-align: right;
+.post .more a {
+    font-size: 85%;
 }
 
 .more a {

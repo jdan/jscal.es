@@ -1,0 +1,6 @@
+title: Hello, World!
+author: Jordan Scales
+date: 2012/05/17
+color: blue
+
+**Hello, world!** This is my blog. Powered by a custom fork of [toto](https://github.com/cloudhead/toto).

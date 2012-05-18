@@ -198,19 +198,30 @@ body > footer {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 760px) {
+    
+    h1 { font-size: 150%; }
+    h2 { font-size: 200%; }
+    
+    .sink {
+        float: right;
+        position: relative;
+        right: 30px;
+        top: 3px;
+    }
+    
     #deets {
+        padding-left: 20px;
         position: fixed;
         top: 0;
-        height: 30px;
+        height: 60px;
         border-bottom: 1px solid #aaa;
-        padding-left: 10px;
         width: 100%;
         background-color: #fff;
     }
     
     #main {
-        margin: 70px 10px 0 0;
+        margin: 110px 10px 0 0;
         width: 100%;
     }
     

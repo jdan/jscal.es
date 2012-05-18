@@ -1,12 +1,14 @@
 html { margin: 20px }
 
 body {
-    margin: 0 auto;
-    font-family: 'Baskerville', Georgia, Times, serif;
-    font-size: 18px;
+    margin: 0 auto 50px auto;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-family: 'Baskerville', Georgia, Times, serif; */
+    font-size: 16px;
     line-height: 22px;
     padding: 15px;
     width: 800px;
+    font-weight: 300;
 }
 
 header, footer, section, article {
@@ -40,7 +42,6 @@ p {
 .date {
     font-size: 80%;
     float: right;
-    line-height: 43px;
 }
 
 a {
@@ -69,7 +70,7 @@ body > header > h1 {
 }
 
 .post {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .post.blue { border-left: 4px solid #049cdb }
@@ -121,7 +122,7 @@ body > header > h1 {
 }
 
 .post .more a {
-    font-size: 85%;
+    font-size: 80%;
 }
 
 .more a {

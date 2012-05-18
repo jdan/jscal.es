@@ -1,0 +1,12 @@
+title: My Second Post
+author: Jordan Scales
+date: 2012/05/17
+color: orange
+
+Just testing out some colors.
+
+    from math import sqrt
+    
+    print sqrt(5)
+    
+This is all.

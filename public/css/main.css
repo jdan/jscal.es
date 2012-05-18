@@ -197,3 +197,26 @@ body > footer {
         width: 100%;
     }
 }
+
+@media (max-width: 670px) {
+    #deets {
+        position: fixed;
+        top: 0;
+        height: 30px;
+        border-bottom: 1px solid #aaa;
+        padding-left: 10px;
+        width: 100%;
+        background-color: #fff;
+    }
+    
+    #main {
+        margin: 70px 10px 0 0;
+        width: 100%;
+    }
+    
+    #main-container {
+        margin: 0 10px 0 5px;
+    }
+    
+    body { padding: 0; margin: 0; }
+}

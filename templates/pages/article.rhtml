@@ -1,4 +1,6 @@
 <article class="post <%= color %>">
+  <div class="more"><a href="/">&larr; back to index</a></div>
+
   <header>
     <h1><%= title %></h1>
     <span class="date"><%= date %></span>
@@ -7,6 +9,8 @@
   <section class="content">
     <%= body %>
   </section>
+
+  <div class="more"><a href="/">&larr; back to index</a></div>
 
   <section class="comments">
     <% if @config[:disqus] %>

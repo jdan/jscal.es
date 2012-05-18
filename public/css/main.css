@@ -1,18 +1,37 @@
-html { margin: 20px }
-
 body {
-    margin: 0 auto 50px auto;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     /* font-family: 'Baskerville', Georgia, Times, serif; */
     font-size: 16px;
     line-height: 22px;
     padding: 15px;
-    width: 800px;
     font-weight: 300;
 }
 
 header, footer, section, article {
 	display: block;
+}
+
+#deets {
+    line-height: 20px;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 220px;
+    border-right: 1px solid #aaa;
+    margin: 0;
+}
+
+#main-container { margin-left: 250px; }
+
+#main {
+    margin: 0 auto 50px auto;
+    width: 800px;
+}
+
+.sink {
+    position: absolute;
+    bottom: 30px;
 }
 
 #content {
@@ -168,4 +187,13 @@ body > footer {
     font-style: italic;
     font-size: 18px;
     color: #888;
+}
+
+/* responsiveness */
+
+@media (max-width: 1075px) {
+    #main {
+        margin: 0 auto 50px auto;
+        width: 100%;
+    }
 }

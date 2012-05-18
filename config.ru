@@ -14,34 +14,22 @@ toto = Toto::Server.new do
     d = d.to_i
 
     if d < 1
-      return 'today'
+      'today'
     else
       case d
         when 1
-          return 'yesterday'
+          'yesterday'
         when 2..6
-          return d.to_s + ' days ago'
+          d.to_s + ' days ago'
         when 7..28
           amt = (d / 7).to_i
-          if amt == 1
-            return '1 week ago'
-          else
-            return amt.to_s + ' weeks ago'
-          end
+          "#{amt.to_s} week#{(amt > 1 ? 's' : '')} ago"
         when 29..365
           amt = (d / 28).to_i
-          if amt == 1
-            return '1 month ago'
-          else
-            return amt.to_s + ' months ago'
-          end
+          "#{amt.to_s} month#{(amt > 1 ? 's' : '')} ago"
         else
           amt = (d / 365).to_i
-          if amt == 1
-            return '1 year ago'
-          else
-            return amt.to_s + ' years ago'
-          end
+          "#{amt.to_s} year#{(amt > 1 ? 's' : '')} ago"
       end
     end
   end

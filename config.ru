@@ -21,14 +21,14 @@ toto = Toto::Server.new do
           'yesterday'
         when 2..6
           d.to_s + ' days ago'
-        when 7..28
+        when 7..29
           amt = (d / 7).to_i
           "#{amt.to_s} week#{(amt > 1 ? 's' : '')} ago"
-        when 29..365
-          amt = (d / 28).to_i
+        when 30..360
+          amt = (d / 30).to_i
           "#{amt.to_s} month#{(amt > 1 ? 's' : '')} ago"
         else
-          amt = (d / 365).to_i
+          amt = (d / 360).to_i
           "#{amt.to_s} year#{(amt > 1 ? 's' : '')} ago"
       end
     end

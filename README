@@ -8,3 +8,15 @@ My blahg.
 http://jscal.es
 
 Based on dorothy - http://github.com/cloudhead/dorothy
+
+Run it yourself
+
+- git clone git@github.com:prezjordan/jscal.es.git
+- cd jscal.es/
+- thin start -R config.ru
+
+Push it to heroku
+
+- heroku create
+- git push heroku master
+- heroku open

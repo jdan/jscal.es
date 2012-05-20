@@ -9,7 +9,12 @@
       <section class="content">
         <%= article.summary %>
       </section>
-      <div class="more"><a href="<%= article.path %>">read on &rarr;</a></div>
+      <div class="more">
+        <a href="<%= article.path %>">
+          <%= ['read on', 'check it out', 'explore', 'dive in', 'jump in', 'see the rest', 'see more', 'continued'].sample %>
+          &rarr;
+        </a>
+      </div>
     </article>
   <% end %>
 </section>

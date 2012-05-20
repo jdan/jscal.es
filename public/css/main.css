@@ -27,7 +27,7 @@ header, footer, section, article {
     color: black;
 }
 
-#deets a:hover { text-decoration: underline; }
+#deets a:hover { border-bottom: 1px dotted #444; }
 
 #main-container { margin-left: 250px; }
 

@@ -48,9 +48,8 @@ toto = Toto::Server.new do
   # set :ext,       'txt'                                     # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
 
-  # set :date,        lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
-  set :date,        lambda { |now| time_ago(now) }  # ugly?
-  set :title,       "blahg"
+  set :date,    lambda { |now| time_ago(now) }  # ugly?
+  set :title,   "blahg"
 end
 
 run toto

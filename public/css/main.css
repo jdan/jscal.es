@@ -207,7 +207,7 @@ body > footer {
         float: right;
         position: relative;
         right: 30px;
-        top: 3px;
+        bottom: 50px;
     }
     
     #deets {
@@ -218,6 +218,12 @@ body > footer {
         border-bottom: 1px solid #aaa;
         width: 100%;
         background-color: #fff;
+    }
+    
+    #deets p {
+        position: relative;
+        bottom: 10px;
+        font-size: 90%;
     }
     
     #main {

@@ -37,7 +37,6 @@ header, footer, section, article {
 }
 
 #articles { margin-bottom: 30px; }
-#archives { margin-top: 30px; }
 #archives-header { margin-bottom: 30px; }
 
 .sink {
@@ -251,4 +250,6 @@ body > footer {
     }
     
     body { padding: 0; margin: 0; }
+    
+    #archives-header { margin-left: 25px; }
 }

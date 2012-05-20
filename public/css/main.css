@@ -5,7 +5,10 @@ body {
     line-height: 22px;
     padding: 15px;
     font-weight: 300;
+    padding-bottom: 100px;
 }
+
+.small { display: none; }
 
 header, footer, section, article {
 	display: block;
@@ -29,6 +32,11 @@ header, footer, section, article {
 
 #deets a:hover { border-bottom: 1px dotted #444; }
 
+#links { 
+    margin-top: 100px;
+    font-size: 90%; 
+}
+
 #main-container { margin-left: 250px; }
 
 #main {
@@ -44,14 +52,6 @@ header, footer, section, article {
     bottom: 30px;
 }
 
-#content {
-    
-}
-
-p {
-
-}
-
 #by {
 	font-style: italic;
     margin-right: 5px;
@@ -64,17 +64,11 @@ p {
 	margin: -135px 0 0 70px;
 }
 
-#path {
-	color: #b53131;
-}
+#path { color: #b53131; }
 
 .date {
     font-size: 80%;
     float: right;
-}
-
-a {
-    color: #b83000;
 }
 
 h1 a {
@@ -82,13 +76,9 @@ h1 a {
     text-decoration: none;
 }
 
-strong {
-    font-weight: 400;
-}
+strong { font-weight: 400; }
 
-a:hover {
-    text-decoration: underline;
-}
+a:hover { text-decoration: underline; }
 
 body > header > h1 {
     border-left: 30px solid black;
@@ -98,9 +88,7 @@ body > header > h1 {
     font-weight: normal;
 }
 
-.post {
-    padding-left: 20px;
-}
+.post { padding-left: 20px; }
 
 .post.blue { border-left: 4px solid #049cdb }
 .post.blue a, .post.blue strong, .post.blue h1 { color: #049cdb }
@@ -214,8 +202,17 @@ body > footer {
 
 @media (max-width: 760px) {
     
-    h1 { font-size: 150%; }
+    .large { display: none; }
+    .small { display: block; }
+    
+    .post { padding-left: 15px; }
+    
+    h1 { font-size: 120%; }
     h2 { font-size: 200%; }
+    
+    .date { font-size: 120%; }
+    
+    .post .more a { font-size: 100%; }
     
     .sink {
         float: right;
@@ -228,7 +225,7 @@ body > footer {
         padding-left: 20px;
         position: fixed;
         top: 0;
-        height: 60px;
+        height: 70px;
         border-bottom: 1px solid #aaa;
         width: 100%;
         background-color: #fff;
@@ -236,12 +233,30 @@ body > footer {
     
     #deets p {
         position: relative;
-        bottom: 10px;
-        font-size: 90%;
+        bottom: 12px;
+        font-size: 120%;
+    }
+    
+    #links-small {
+        position: absolute;
+        top: 40px;
+        right: 100px;
+    }
+    
+    #links-small .link {
+        padding: 5px 15px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        border: 3px solid #ddd;
+    }
+    
+    #links-small .link:hover {
+        background-color: #ddd;
     }
     
     #main {
-        margin: 100px 10px 0 0;
+        margin: 110px 10px 0 0;
         width: 100%;
     }
     
@@ -252,4 +267,8 @@ body > footer {
     body { padding: 0; margin: 0; }
     
     #archives-header { margin-left: 25px; }
+}
+
+@media (max-width: 500px) {
+    #links-small { display: none; }
 }

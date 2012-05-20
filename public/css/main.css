@@ -71,10 +71,7 @@ header, footer, section, article {
     float: right;
 }
 
-h1 a {
-    font-size: 120%;
-    text-decoration: none;
-}
+h1 a { text-decoration: none; }
 
 strong { font-weight: 400; }
 
@@ -207,8 +204,8 @@ body > footer {
     
     .post { padding-left: 15px; }
     
-    h1 { font-size: 120%; }
-    h2 { font-size: 200%; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
     
     .date { font-size: 120%; }
     

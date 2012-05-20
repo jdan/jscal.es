@@ -1,6 +1,0 @@
-title: Aboot
-author: Jordan
-date: 2012/05/19
-color: red
-
-This is what it's all aboot.

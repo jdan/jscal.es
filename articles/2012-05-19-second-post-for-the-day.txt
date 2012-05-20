@@ -1,6 +1,0 @@
-title: Second Post for the Day
-author: Jordan
-date: 2012/05/19
-color: pink
-
-Just pushing more into the archives!

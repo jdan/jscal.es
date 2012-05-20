@@ -1,6 +1,6 @@
 title: Second Post for the Day
 author: Jordan
-date: 5/20/2012
+date: 5/19/2012
 color: pink
 
 Just pushing more into the archives!

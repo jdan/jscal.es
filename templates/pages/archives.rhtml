@@ -1,11 +1,13 @@
-<h1><%= @path %></h1>
-<ul>
-  <% if archives.length > 0 %>
-    <% for entry in archives %>
-      <li>
-        <a href="<%= entry.path %>"><%= entry.title %></a>
-      </li>
-    <% end %>
+<div id="archives-header">
+  <h1><%= @path %></h1>
+</div>
+<% if archives.length > 0 %>
+  <% for entry in archives %>
+    <article class="post archived <%= entry.color %>">
+      <header>
+        <h1><a href="<%= entry.path %>"><%= entry.title %></a></h1>
+        <span class="date"><%= entry.date %></span>
+      </header>
+    </article>
   <% end %>
-</ul>
-
+<% end %>

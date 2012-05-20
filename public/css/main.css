@@ -36,6 +36,10 @@ header, footer, section, article {
     width: 800px;
 }
 
+#articles { margin-bottom: 30px; }
+#archives { margin-top: 30px; }
+#archives-header { margin-bottom: 30px; }
+
 .sink {
     position: absolute;
     bottom: 30px;
@@ -137,6 +141,10 @@ body > header > h1 {
 
 .post {
 	margin-bottom: 30px;
+}
+
+.post.archived {
+    margin-bottom: 5px;
 }
 
 .post:last-child {

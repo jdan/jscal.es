@@ -71,6 +71,7 @@ header, footer, section, article {
     float: right;
 }
 
+h1 { font-size: 20px }
 h1 a { text-decoration: none; }
 
 strong { font-weight: 400; }

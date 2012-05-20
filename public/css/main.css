@@ -217,8 +217,8 @@ body > footer {
     .sink {
         float: right;
         position: relative;
-        right: 30px;
-        bottom: 50px;
+        right: 45px;
+        bottom: 52px;
     }
     
     #deets {
@@ -240,8 +240,8 @@ body > footer {
     
     #links-small {
         position: absolute;
-        top: 40px;
-        right: 60px;
+        top: 30px;
+        right: 45px;
     }
     
     #links-small .link {

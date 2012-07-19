@@ -1,6 +1,10 @@
 require 'toto'
 require 'time-ago-in-words'
 
+class Toto::Article
+  def color; self[:color] end
+end
+
 # Rack config
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
